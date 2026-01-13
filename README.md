@@ -24,9 +24,15 @@ Transcriber/
 
 ### 1. Install Python (if not already installed)
 
+**Windows:**
 Download Python 3.10+ from: https://www.python.org/downloads/
+- **Important**: During installation, check "Add Python to PATH"
 
-**Important**: During installation, check "Add Python to PATH"
+**macOS:**
+```bash
+brew install python
+```
+Or download from: https://www.python.org/downloads/
 
 ### 2. Install Dependencies
 
@@ -46,15 +52,26 @@ This installs:
 
 Whisper needs FFmpeg to process audio files.
 
-**Windows:**
+**macOS (Recommended):**
+```bash
+brew install ffmpeg
+```
+
+**Windows (Option 1 - Recommended):**
+```bash
+winget install FFmpeg
+```
+
+**Windows (Option 2 - Manual):**
 1. Download from: https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
 2. Extract the zip file
 3. Add the `bin` folder to your system PATH, OR
-4. Simply copy `ffmpeg.exe` into this Transcriber folder
+4. Copy `ffmpeg.exe` into this Transcriber folder
 
-**Or use winget:**
+**Linux:**
 ```bash
-winget install FFmpeg
+sudo apt install ffmpeg    # Ubuntu/Debian
+sudo dnf install ffmpeg    # Fedora
 ```
 
 ## Usage
