@@ -43,3 +43,9 @@ output/*.txt
 
 # Whisper model cache (large files)
 *.pt
+
+# FFmpeg binary (users should download themselves)
+ffmpeg.exe
+ffmpeg
+ffprobe.exe
+ffprobe
